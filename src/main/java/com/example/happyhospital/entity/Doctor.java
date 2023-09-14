@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @Entity
 @Getter @Setter
-@Table(name = "doctors")
+@Table(name = "doctor")
 public class Doctor extends BaseEntityAudit {
 
     private String firstName;
