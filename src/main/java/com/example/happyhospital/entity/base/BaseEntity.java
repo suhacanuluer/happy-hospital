@@ -1,4 +1,4 @@
-package com.example.happyhospital.entity;
+package com.example.happyhospital.entity.base;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
