@@ -1,15 +1,20 @@
 package com.example.happyhospital.entity;
 
+import com.example.happyhospital.entity.base.BaseEntityAudit;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
-@Getter @Setter
-@Table(name = "nurse")
+@Table(name = "nurses")
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Nurse extends BaseEntityAudit {
 
+    // todo: doctor-nurse implement from personal class with common fields
     private String firstName;
     private String lastName;
     private String phone;

@@ -1,13 +1,17 @@
 package com.example.happyhospital.entity;
 
+import com.example.happyhospital.entity.base.BaseEntityAudit;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
-@Getter @Setter
-@Table(name = "doctor")
+@Table(name = "doctors")
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Doctor extends BaseEntityAudit {
 
     private String firstName;
